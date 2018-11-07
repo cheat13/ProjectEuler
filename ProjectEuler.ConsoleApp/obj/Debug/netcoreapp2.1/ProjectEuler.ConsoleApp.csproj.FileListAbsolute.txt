@@ -1,0 +1,11 @@
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\bin\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.deps.json
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\bin\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.runtimeconfig.json
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\bin\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.runtimeconfig.dev.json
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\bin\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.dll
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\bin\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.pdb
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\obj\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\obj\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\obj\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\obj\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.AssemblyInfo.cs
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\obj\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.dll
+C:\Users\Computer\Desktop\WorkSpace\ProjectEuler.ConsoleApp\obj\Debug\netcoreapp2.1\ProjectEuler.ConsoleApp.pdb
