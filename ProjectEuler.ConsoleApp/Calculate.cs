@@ -1,18 +1,36 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace ProjectEuler.ConsoleApp
 {
     public class Calculate
     {
         public int Calc(int number)
         {
-            var result = 0;
-            for (int i = 0; i < number; i++)
+            var sequence = FindSequence(number);
+            var result = sequence.Where(it => it % 2 == 0).Sum();
+            return result;
+        }
+        
+        public int[] FindSequence(int number)
+        {
+            var sequence = new List<int>();
+            sequence.Add(1);
+            sequence.Add(2);
+
+            for (int i = 2; ; i++)
             {
-                if (i % 3 == 0 || i % 5 == 0)
+                if (sequence[i - 1] + sequence[i - 2] <= number)
                 {
-                    result += i;
+                    sequence.Add(sequence[i - 1] + sequence[i - 2]);
+                }
+                else
+                {
+                    break;
                 }
             }
-            return result;
+            
+            return sequence.ToArray();
         }
     }
 }
