@@ -5,32 +5,58 @@ namespace ProjectEuler.ConsoleApp
 {
     public class Calculate
     {
-        public int Calc(int number)
+        public double Calc(int number)
         {
-            var sequence = FindSequence(number);
-            var result = sequence.Where(it => it % 2 == 0).Sum();
+            var listAbundant = FindListAbundant(number);
+            var theNumbers = new List<double>();
+            var IsStop = false;
+            for (int i = 0; i < number; i++)
+            {
+                IsStop = false;
+                for (int j = 0; j < listAbundant.Length; j++)
+                {
+                    if (IsStop) break;
+                    for (int k = 0; k < listAbundant.Length; k++)
+                    {
+                        if (listAbundant[j] + listAbundant[k] == i)
+                        {
+                            IsStop = true;
+                            break;
+                        }
+                        else if (j == listAbundant.Length - 1 && k == listAbundant.Length - 1)
+                        {
+                            theNumbers.Add(i);
+                        }
+                    }
+                }
+            }
+            var result = theNumbers.ToArray().Sum();
             return result;
         }
 
-        public int[] FindSequence(int number)
+        public int[] FindDivisors(int number)
         {
-            var sequence = new List<int>();
-            sequence.Add(1);
-            sequence.Add(2);
-
-            for (int i = 0; ; i++)
+            var divisors = new List<int>();
+            for (int i = 1; i < number; i++)
             {
-                if (sequence[i + 1] + sequence[i] <= number)
-                {
-                    sequence.Add(sequence[i + 1] + sequence[i]);
-                }
-                else
-                {
-                    break;
-                }
+                if (number % i == 0) divisors.Add(i);
             }
+            return divisors.ToArray();
+        }
 
-            return sequence.ToArray();
+        public bool IsAbundant(int number)
+        {
+            return (FindDivisors(number).Sum() > number) ? true : false;
+        }
+
+        public int[] FindListAbundant(int number)
+        {
+            var listAbundant = new List<int>();
+            for (int i = 1; i < number; i++)
+            {
+                if (IsAbundant(i)) listAbundant.Add(i);
+            }
+            return listAbundant.ToArray();
         }
     }
 }
