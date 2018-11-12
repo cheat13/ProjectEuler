@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -5,58 +6,42 @@ namespace ProjectEuler.ConsoleApp
 {
     public class Calculate
     {
-        public double Calc(int number)
+        public bool IsPrimeNumber(double factors)
         {
-            var listAbundant = FindListAbundant(number);
-            var theNumbers = new List<double>();
-            var IsStop = false;
-            for (int i = 0; i < number; i++)
+            for (int i = 2; i < factors; i++)
             {
-                IsStop = false;
-                for (int j = 0; j < listAbundant.Length; j++)
+                if (factors % i == 0) return false;
+            }
+            return true;
+        }
+
+        public double[] Primefactors(double number)
+        {
+            var primefactors = new List<double>();
+            for (int i = 2; i < number / 2; i++)
+            {
+                if (number % i == 0 && IsPrimeNumber(i)) primefactors.Add(i);
+            }
+            return primefactors.ToArray();
+        }
+
+        public double TheLargestPF(double number)
+        {
+            return Primefactors(number).Max();
+        }
+
+        public double Calc(double number)
+        {
+            var theLargestPF = number;
+            var end = Math.Sqrt(number);
+            for (int i = 2; i < end; i++)
+            {
+                while (theLargestPF % i == 0 && theLargestPF != i)
                 {
-                    if (IsStop) break;
-                    for (int k = 0; k < listAbundant.Length; k++)
-                    {
-                        if (listAbundant[j] + listAbundant[k] == i)
-                        {
-                            IsStop = true;
-                            break;
-                        }
-                        else if (j == listAbundant.Length - 1 && k == listAbundant.Length - 1)
-                        {
-                            theNumbers.Add(i);
-                        }
-                    }
+                    theLargestPF /= i;
                 }
             }
-            var result = theNumbers.ToArray().Sum();
-            return result;
-        }
-
-        public int[] FindDivisors(int number)
-        {
-            var divisors = new List<int>();
-            for (int i = 1; i < number; i++)
-            {
-                if (number % i == 0) divisors.Add(i);
-            }
-            return divisors.ToArray();
-        }
-
-        public bool IsAbundant(int number)
-        {
-            return (FindDivisors(number).Sum() > number) ? true : false;
-        }
-
-        public int[] FindListAbundant(int number)
-        {
-            var listAbundant = new List<int>();
-            for (int i = 1; i < number; i++)
-            {
-                if (IsAbundant(i)) listAbundant.Add(i);
-            }
-            return listAbundant.ToArray();
+            return theLargestPF;
         }
     }
 }
