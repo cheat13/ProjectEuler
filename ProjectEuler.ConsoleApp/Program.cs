@@ -10,7 +10,7 @@ namespace ProjectEuler.ConsoleApp
         static void Main(string[] args)
         {
             var calc = new Calculate();
-            var result = calc.Calc(2, 100);
+            var result = calc.Calc(10, 236196, 4);
             Console.WriteLine(result);
         }
     }

@@ -6,10 +6,15 @@ namespace ProjectEuler.ConsoleApp
 {
     public class Calculate
     {
-        public int Calc(int start, int end)
+        public double Calc(int min, int max, int pow)
         {
-            var lstNumber = Enumerable.Range(start, end - start + 1);
-            return lstNumber.SelectMany(it => lstNumber, (a, b) => Math.Pow(a, b)).Distinct().Count();
+            var lstNum = Enumerable.Range(min, max - min + 1);
+            return lstNum.Where(num => num == Sum(num, pow)).Sum();
+        }
+
+        public double Sum(int num, int pow)
+        {
+            return num.ToString().Select(it => Math.Pow(int.Parse(it.ToString()), pow)).Sum();
         }
     }
 }

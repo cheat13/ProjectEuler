@@ -8,14 +8,11 @@ namespace ProjectEuler.Test
     public class Test
     {
         [Theory]
-        [InlineData(1, 1, 1)]
-        [InlineData(1, 2, 3)]
-        [InlineData(1, 3, 7)]
-        [InlineData(2, 5, 15)]
-        public void CheckDigit(int start, int end, int expected)
+        [InlineData(1634, 9474, 4, 19316)]
+        public void CheckDigit(int min, int max, int pow, double expected)
         {
             var sut = new Calculate();
-            var result = sut.Calc(start, end);
+            var result = sut.Calc(min, max, pow);
             Assert.Equal(expected, result);
         }
     }
