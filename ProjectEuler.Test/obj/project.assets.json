@@ -1685,9 +1685,6 @@
       "ProjectEuler.ConsoleApp/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "Microsoft.NETCore.App": "2.1.0"
-        },
         "compile": {
           "bin/placeholder/ProjectEuler.ConsoleApp.dll": {}
         },
@@ -2138,10 +2135,11 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "TT+QCi9LcxGTjBssH7S7n5+8DVcwfG4DYgXX7Dk7+BfZ4oVHj8Q0CbYk9glzAlHLsSt3bYzol+fOdra2iu6GOw==",
+      "sha512": "aSTPL94NloSiQVL5Len8wbjFKOnoAX/vOh3s3DF6g3c7GUUMLCDvnBhmA72M2iN2AedyA8hpr7m89kzSAKUnJQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -5786,23 +5784,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Computer\\.nuget\\packages\\": {},
+    "C:\\Users\\trago\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Computer\\Desktop\\WorkSpace\\ProjectEuler.Test\\ProjectEuler.Test.csproj",
+      "projectUniqueName": "C:\\Users\\trago\\OneDrive\\Desktop\\ProjectEuler\\ProjectEuler.Test\\ProjectEuler.Test.csproj",
       "projectName": "ProjectEuler.Test",
-      "projectPath": "C:\\Users\\Computer\\Desktop\\WorkSpace\\ProjectEuler.Test\\ProjectEuler.Test.csproj",
-      "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Computer\\Desktop\\WorkSpace\\ProjectEuler.Test\\obj\\",
+      "projectPath": "C:\\Users\\trago\\OneDrive\\Desktop\\ProjectEuler\\ProjectEuler.Test\\ProjectEuler.Test.csproj",
+      "packagesPath": "C:\\Users\\trago\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\trago\\OneDrive\\Desktop\\ProjectEuler\\ProjectEuler.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\trago\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5815,8 +5813,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Computer\\Desktop\\WorkSpace\\ProjectEuler.ConsoleApp\\ProjectEuler.ConsoleApp.csproj": {
-              "projectPath": "C:\\Users\\Computer\\Desktop\\WorkSpace\\ProjectEuler.ConsoleApp\\ProjectEuler.ConsoleApp.csproj"
+            "C:\\Users\\trago\\OneDrive\\Desktop\\ProjectEuler\\ProjectEuler.ConsoleApp\\ProjectEuler.ConsoleApp.csproj": {
+              "projectPath": "C:\\Users\\trago\\OneDrive\\Desktop\\ProjectEuler\\ProjectEuler.ConsoleApp\\ProjectEuler.ConsoleApp.csproj"
             }
           }
         }

@@ -516,10 +516,11 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "TT+QCi9LcxGTjBssH7S7n5+8DVcwfG4DYgXX7Dk7+BfZ4oVHj8Q0CbYk9glzAlHLsSt3bYzol+fOdra2iu6GOw==",
+      "sha512": "aSTPL94NloSiQVL5Len8wbjFKOnoAX/vOh3s3DF6g3c7GUUMLCDvnBhmA72M2iN2AedyA8hpr7m89kzSAKUnJQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -681,23 +682,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Computer\\.nuget\\packages\\": {},
+    "C:\\Users\\trago\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Computer\\Desktop\\WorkSpace\\ProjectEuler.ConsoleApp\\ProjectEuler.ConsoleApp.csproj",
+      "projectUniqueName": "c:\\Users\\trago\\OneDrive\\Desktop\\ProjectEuler\\ProjectEuler.ConsoleApp\\ProjectEuler.ConsoleApp.csproj",
       "projectName": "ProjectEuler.ConsoleApp",
-      "projectPath": "C:\\Users\\Computer\\Desktop\\WorkSpace\\ProjectEuler.ConsoleApp\\ProjectEuler.ConsoleApp.csproj",
-      "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Computer\\Desktop\\WorkSpace\\ProjectEuler.ConsoleApp\\obj\\",
+      "projectPath": "c:\\Users\\trago\\OneDrive\\Desktop\\ProjectEuler\\ProjectEuler.ConsoleApp\\ProjectEuler.ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\trago\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\trago\\OneDrive\\Desktop\\ProjectEuler\\ProjectEuler.ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\trago\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -722,6 +723,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

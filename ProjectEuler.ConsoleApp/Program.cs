@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Text;
 
 namespace ProjectEuler.ConsoleApp
 {
@@ -6,11 +9,9 @@ namespace ProjectEuler.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.Write("Input number : ");
-            var number = double.Parse(Console.ReadLine());
-            var calculate = new Calculate();
-            var result = calculate.Calc(number);
-            Console.Write($"Result = {result}");
+            var calc = new Calculate();
+            var result = calc.Calc(2, 100);
+            Console.WriteLine(result);
         }
     }
 }
